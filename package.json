@@ -1,0 +1,36 @@
+{
+  "name": "labeeb-exchange",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env server/index.mjs",
+    "demo": "node --env-file-if-exists=.env server/index.mjs --demo",
+    "build": "tsc --noEmit && vite build",
+    "start": "node --env-file-if-exists=.env server/index.mjs --production",
+    "test": "node --test tests/*.test.mjs",
+    "format": "prettier --write src shared server tests"
+  },
+  "dependencies": {
+    "@fontsource/cairo": "5.3.0",
+    "express": "5.2.1",
+    "firebase": "12.18.0",
+    "firebase-admin": "14.3.0",
+    "lucide-react": "1.42.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "read-excel-file": "9.3.10"
+  },
+  "devDependencies": {
+    "@types/node": "26.4.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "6.1.1",
+    "prettier": "3.9.6",
+    "typescript": "7.0.2",
+    "vite": "8.2.2"
+  }
+}

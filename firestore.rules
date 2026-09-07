@@ -1,0 +1,8 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // كل القراءة والكتابة عبر الخادم بعد التحقق من الهوية والصلاحيات.
+    // واجهة العرض تحصل على بيانات منشورة ومنقحة من /api/public فقط.
+    match /{document=**} { allow read, write: if false; }
+  }
+}

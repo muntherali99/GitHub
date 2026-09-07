@@ -1,0 +1,9 @@
+node_modules
+.demo
+.env
+.env.*
+!.env.example
+.git
+review
+dist
+*.zip

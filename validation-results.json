@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-09-07T14:07:48.033Z",
+  "checks": [
+    "public width 360",
+    "public width 390",
+    "public width 768",
+    "public width 1280",
+    "group/search/favorite/company/PNG",
+    "anonymous administration blocked and public fields filtered",
+    "draft stays private / publish changes balance / double publish does not duplicate",
+    "create company",
+    "audit visible to manager"
+  ],
+  "errors": [],
+  "firebaseLiveTested": false
+}
