@@ -3,11 +3,11 @@ import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
-import { FileStore } from "../server/store.mjs";
-import { applyAction, scopedState } from "../server/service.mjs";
-import { emptyState, demoState } from "../server/demo.mjs";
-import { blankRecord, publicProjection } from "../shared/engine.mjs";
-import { DEFAULT_RULES as rules } from "../shared/rules.mjs";
+import { FileStore } from "./store.mjs";
+import { applyAction, scopedState } from "./service.mjs";
+import { emptyState, demoState } from "./demo.mjs";
+import { blankRecord, publicProjection } from "./engine.mjs";
+import { DEFAULT_RULES as rules } from "./rules.mjs";
 const manager = {
   email: "owner@example.invalid",
   role: "manager",

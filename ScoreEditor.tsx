@@ -8,10 +8,10 @@ import type {
   Criterion,
   Act,
 } from "../../types";
-import { request, download, csvExport, parseCSV } from "../../api";
-import { GROUPS } from "../../../shared/rules.mjs";
-import { calculate, blankRecord, caps } from "../../../shared/engine.mjs";
-import { Notice, Stat, groupLabel } from "../common";
+import { request, download, csvExport, parseCSV } from "./api";
+import { GROUPS } from "./rules.mjs";
+import { calculate, blankRecord, caps } from "./engine.mjs";
+import { Notice, Stat, groupLabel } from "./common";
 export default function ScoreEditor({
   data,
   meetingId,

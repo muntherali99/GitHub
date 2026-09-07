@@ -7,8 +7,8 @@ import { getAuth } from "firebase-admin/auth";
 import { FileStore, FirebaseStore } from "./store.mjs";
 import { emptyState } from "./demo.mjs";
 import { scopedState, applyAction } from "./service.mjs";
-import { publicProjection, DomainError } from "../shared/engine.mjs";
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+import { publicProjection, DomainError } from "./engine.mjs";
+const root = path.dirname(fileURLToPath(import.meta.url));
 const demo = process.argv.includes("--demo"),
   production =
     process.argv.includes("--production") ||
@@ -147,7 +147,7 @@ app.use("/api", (req, res) =>
 );
 if (production) {
   app.use(express.static(path.join(root, "dist")));
-  app.get("/{*path}", (req, res) =>
+  app.get("*all", (req, res) =>
     res.sendFile(path.join(root, "dist", "index.html")),
   );
 } else {

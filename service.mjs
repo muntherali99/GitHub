@@ -1,11 +1,11 @@
 import { randomUUID } from "node:crypto";
-import { GROUPS } from "../shared/rules.mjs";
+import { GROUPS } from "./rules.mjs";
 import {
   requireCondition,
   validateRecord,
   validateRules,
   blankRecord,
-} from "../shared/engine.mjs";
+} from "./engine.mjs";
 const identifier = (prefix) => prefix + "-" + randomUUID();
 const text = (s, max = 100) =>
   String(s ?? "")

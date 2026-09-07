@@ -12,16 +12,16 @@ import {
   Download,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-import { request, signIn, signOut, download } from "../api";
-import type { AppConfig, State, Group } from "../types";
-import { GROUPS } from "../../shared/rules.mjs";
-import { Notice } from "../components/common";
-import ScoreEditor from "../components/admin/ScoreEditor";
-import People from "../components/admin/People";
-import MeetingForm from "../components/admin/MeetingForm";
-import RulesEditor from "../components/admin/RulesEditor";
-import Team from "../components/admin/Team";
-import Audit from "../components/admin/Audit";
+import { request, signIn, signOut, download } from "./api";
+import type { AppConfig, State, Group } from "./types";
+import { GROUPS } from "./rules.mjs";
+import { Notice } from "./common";
+import ScoreEditor from "./ScoreEditor";
+import People from "./People";
+import MeetingForm from "./MeetingForm";
+import RulesEditor from "./RulesEditor";
+import Team from "./Team";
+import Audit from "./Audit";
 export default function Admin({
   config,
   email,

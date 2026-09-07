@@ -1,7 +1,7 @@
 import { ArrowDownRight, ArrowUpRight } from "lucide-react";
-import type { Company } from "../types";
-import { GROUPS } from "../../shared/rules.mjs";
-import { download } from "../api";
+import type { Company } from "./types";
+import { GROUPS } from "./rules.mjs";
+import { download } from "./api";
 export const number = (n: number) =>
   new Intl.NumberFormat("en", { maximumFractionDigits: 1 }).format(n);
 export const signed = (n: number) => (n > 0 ? "+" : "") + number(n);

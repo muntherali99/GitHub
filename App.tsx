@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { Building2, ShieldCheck, Sparkles } from "lucide-react";
 import type { AppConfig } from "./types";
 import { request, configureAuth } from "./api";
-import { Notice } from "./components/common";
-import Public from "./pages/Public";
-import Admin from "./pages/Admin";
+import { Notice } from "./common";
+import Public from "./Public";
+import Admin from "./Admin";
 export default function App() {
   const [config, setConfig] = useState<AppConfig | null>(null),
     [email, setEmail] = useState<string | null>(null),

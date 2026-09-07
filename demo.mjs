@@ -1,5 +1,5 @@
-import { DEFAULT_RULES } from "../shared/rules.mjs";
-import { blankRecord } from "../shared/engine.mjs";
+import { DEFAULT_RULES } from "./rules.mjs";
+import { blankRecord } from "./engine.mjs";
 export function emptyState() {
   return {
     revision: 0,

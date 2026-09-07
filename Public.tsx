@@ -15,10 +15,10 @@ import {
   ClipboardList,
   ChevronLeft,
 } from "lucide-react";
-import { request } from "../api";
-import type { Group, PublicData } from "../types";
-import { GROUPS } from "../../shared/rules.mjs";
-import { caps } from "../../shared/engine.mjs";
+import { request } from "./api";
+import type { Group, PublicData } from "./types";
+import { GROUPS } from "./rules.mjs";
+import { caps } from "./engine.mjs";
 import {
   Notice,
   Movement,
@@ -30,7 +30,7 @@ import {
   signed,
   date,
   groupLabel,
-} from "../components/common";
+} from "./common";
 export default function Public() {
   const params = new URLSearchParams(location.search);
   const [group, setGroup] = useState<Group>(

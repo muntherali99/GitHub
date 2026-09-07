@@ -1,13 +1,13 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { DEFAULT_RULES as rules } from "../shared/rules.mjs";
+import { DEFAULT_RULES as rules } from "./rules.mjs";
 import {
   blankRecord,
   calculate,
   validateRecord,
   rankCompanies,
   publicProjection,
-} from "../shared/engine.mjs";
+} from "./engine.mjs";
 const meeting = {
   requiresSport: true,
   requiresUniform: true,

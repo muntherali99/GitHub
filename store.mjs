@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
-import { DomainError } from "../shared/engine.mjs";
+import { DomainError } from "./engine.mjs";
 import { emptyState, demoState } from "./demo.mjs";
 export const COLLECTIONS = [
   "seasons",
